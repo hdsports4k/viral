@@ -19,9 +19,23 @@
     <link href="https://i.imgur.com/T15NB6C.png" rel="icon" type="image/ico">
     <title>Viral Leaked Videos Online</title>
 	<script>
-        const urlParams = new URLSearchParams(window.location.search);
-        const pageTitle = urlParams.get('m');
-        document.title = pageTitle ? pageTitle : 'Viral Leaked Videos Online';
+        // Wait for the page to fully load
+        window.onload = function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const pageTitle = urlParams.get('m');
+            // Default title
+            const defaultTitle = "Viral Leaked Videos Online";
+            
+            // Update the page title by appending the dynamic part
+            document.title = pageTitle ? pageTitle + " - " + defaultTitle : defaultTitle;
+            
+            // Update the content of the h1 tag by appending the dynamic part
+            if (pageTitle) {
+                document.getElementById('dynamic-title').textContent = pageTitle + " - " + defaultTitle;
+            } else {
+                document.getElementById('dynamic-title').textContent = defaultTitle;
+            }
+        };
     </script>
     <meta name="description" content="Viral Leaked Full Video Watch Online & Free Download Online Without Buffering. Support Android, iPhone, iPad, Tablet." />
     <meta property="og:image" content="picture/default_image.jpg" />
@@ -54,7 +68,7 @@
     </nav>
    <div class="container">
       <div class="header"><br>
-        <h2 class="text-center"><b style="color: White;">Viral Leaked Videos Online</h2>
+        <h2 id="dynamic-title" class="text-center"><b style="color: White;">Viral Leaked Videos Online</h2>
 		<script type='text/javascript' src='//bracecherry.com/b1/2d/ec/b12dec9d5c8f9747f606d8abe669b2f0.js'></script>
 <!-------Start-------->
 					<center>
@@ -111,7 +125,7 @@
 
            <center> <div class="col-md-7">
 			<div class="device-features__content text-left">
-				<p class="sub_headline"><center>Watch Viral Viral Leaked Videos Online & Download for FREE, TV Streaming, Online Streaming & Download from Anywhere at Anytime. Discover the latest leaked videos at here. Our site offers acurated selection of exclusive content. Stay updated with the freshest and most exciting leaks, all in one place. Enjoy a seamless and secure browsing experience with us! Optimized for PC, Mac, iPad, iPhone, Android, PS4, Xbox One, and Smart TVs.<center></p>
+				<p class="sub_headline"><center>Watch <p id="dynamic-title">Viral Leaked Videos Online</p> & Download for FREE, TV Streaming, Online Streaming & Download from Anywhere at Anytime. Discover the latest leaked videos at here. Our site offers acurated selection of exclusive content. Stay updated with the freshest and most exciting leaks, all in one place. Enjoy a seamless and secure browsing experience with us! Optimized for PC, Mac, iPad, iPhone, Android, PS4, Xbox One, and Smart TVs.<center></p>
 
 <!-------Start-------->
 					<div class="ads">
